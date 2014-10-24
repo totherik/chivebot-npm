@@ -44,7 +44,7 @@ exports.register = function (plugin, options, next) {
                     var pkg, lines;
 
                     if (err) {
-                        cb(null, { text: err.message });
+                        cb(null, err.message);
                         return;
                     }
 
